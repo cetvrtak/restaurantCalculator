@@ -16,15 +16,21 @@
 			text-align: center;
 			vertical-align: middle;
 		}
+
+		input::-webkit-outer-spin-button,
+		input::-webkit-inner-spin-button {
+			-webkit-appearance:  none;
+			margin: 0;
+		}
 	</style>
 </head>
 <body>
 
-	<input type="text" id="small" name="small">
+	<input onclick="this.select();" type="number" id="small" name="small">
 	<label for="small"> Male<br><br></label>
-	<input type="text" id="middle" name="middle">
+	<input onclick="this.select();" type="number" id="middle" name="middle">
 	<label for="middle"> Srednje<br><br></label>
-	<input type="text" id="big" name="big">
+	<input onclick="this.select();" type="number" id="big" name="big">
 	<label for="big"> Velike<br><br></label>
 	<span>Ukupno: </span>
 	<span id="output"></span>
